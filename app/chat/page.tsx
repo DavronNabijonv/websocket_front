@@ -10,6 +10,7 @@ export default function ChatPage() {
   useEffect(() => {
     // Render.com'dagi WebSocket URL'ni bu yerga yozing:
     socketRef.current = new WebSocket(process.env.NEXT_PUBLIC_WEBSOCKET_URL!);
+    // salomlar o`lsun
 
 
     socketRef.current.onmessage = (event) => {
