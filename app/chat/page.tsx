@@ -11,7 +11,7 @@ export default function ChatPage() {
     // Render.com'dagi WebSocket URL'ni bu yerga yozing:
     socketRef.current = new WebSocket(process.env.NEXT_PUBLIC_WEBSOCKET_URL!);
     // salomlar o`lsun
-
+// 2 chi salomlar
 
     socketRef.current.onmessage = (event) => {
       setMessages((prev) => [...prev, event.data]);
